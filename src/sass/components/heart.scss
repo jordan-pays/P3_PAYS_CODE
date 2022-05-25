@@ -1,0 +1,17 @@
+.heart{
+    color: black;
+    font-size: 24px;
+    z-index: 2;
+    &:active .heart--active , &:hover  .heart--active {
+            z-index: 2;
+            opacity: 1;
+    }
+    &--active{
+        color: $color-primary;
+        font-size: 24px;
+        z-index: 0;
+        opacity: 0;
+        transform-origin: bottom;
+        transition: opacity 500ms linear;
+    }
+}
