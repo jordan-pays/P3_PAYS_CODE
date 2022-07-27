@@ -550,6 +550,9 @@ a {
 .menu-item__text {
   font-size: 20px;
   font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu-item__info {
