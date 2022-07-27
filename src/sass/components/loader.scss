@@ -16,6 +16,10 @@
         visibility: hidden;
         animation: spin 1s linear infinite,displaySpin 3s;
     }
+    + html,body {  
+        animation: displayScroll 3s;
+    }  
+    
 }
 
 @keyframes spin {
@@ -28,9 +32,6 @@
     }
 }
 
-html,body {  
-    animation: displayScroll 3s;
-}  
 
 @keyframes displayScroll {
     0% {
@@ -41,7 +42,7 @@ html,body {
         overflow:hidden;
     }
     100% {
-        overflow:show; 
+        overflow: auto; 
     }
 }
 

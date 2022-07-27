@@ -31,7 +31,7 @@
         justify-content: flex-end;
         @include shadow-obj;
         overflow: hidden;
-        margin: 10px 0px;
+        margin: 10px 10px;
         &__container {
             flex-direction: column;
             justify-content: space-between;
@@ -46,6 +46,7 @@
             font-weight: bold;
             white-space: nowrap;
             text-overflow: ellipsis;
+            padding: 2px;
             overflow: hidden;
         }
 
@@ -136,8 +137,23 @@
 }
 
 @media (min-width: 768px) {
-    .menu-container{
-        width: 500px;
-        align-self: center;
+    .menu {
+        &-container{
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &-item{
+            width: 45%;
+        }
+    }
+}
+
+@media (min-width: 996px) {
+    .menu {
+        &-item{
+            width: 28%;
+            min-width: 300px;
+        }
     }
 }

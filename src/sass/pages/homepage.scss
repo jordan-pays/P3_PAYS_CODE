@@ -143,7 +143,7 @@
         flex-direction: column;
         width: 100%;
         position: relative;
-        max-width: 400px;
+        min-width: 250px;
         @include shadow-obj;
         &__image {
             border-radius: 15px 15px 0px 0px;
@@ -187,11 +187,17 @@
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 550px) {
     .restaurant-item{
-        max-width: 330px
+        width: 45%; 
     }
     .functioning-item{
         max-width: 330px
+    }
+}
+
+@media (min-width: 996px) {
+    .restaurant-item{
+        width: 28%;
     }
 }
