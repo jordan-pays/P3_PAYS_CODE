@@ -401,6 +401,7 @@ a {
 @media (min-width: 996px) {
   .restaurant-item {
     width: 28%;
+    max-width: 500px;
   }
 }
 
