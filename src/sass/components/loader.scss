@@ -1,5 +1,5 @@
 .loader {
-    position: absolute;
+    position: fixed;
     display: flex;
     background-color: rgba(0,0,0,0.5);
     visibility: hidden;
@@ -16,11 +16,11 @@
         visibility: hidden;
         animation: spin 1s linear infinite,displaySpin 3s;
     }
-    + html,body {  
-        animation: displayScroll 3s;
-    }  
-    
 }
+
+.scroll {  
+    animation: displayScroll 3s;
+}  
 
 @keyframes spin {
     0% {

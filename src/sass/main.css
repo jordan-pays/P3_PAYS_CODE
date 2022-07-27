@@ -764,7 +764,7 @@ a {
 }
 
 .loader {
-  position: absolute;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,7 +788,7 @@ a {
           animation: spin 1s linear infinite,displaySpin 3s;
 }
 
-.loader + html, .loader body {
+.scroll {
   -webkit-animation: displayScroll 3s;
           animation: displayScroll 3s;
 }
