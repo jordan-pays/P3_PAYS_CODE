@@ -7,11 +7,17 @@
             opacity: 1;
     }
     &--active{
+        // background: linear-gradient(175deg, $color-secondary 0%, $color-primary 100%);
         color: $color-primary;
         font-size: 24px;
         z-index: 0;
         opacity: 0;
         transform-origin: bottom;
         transition: opacity 500ms linear;
+        .heart-radiant{
+            background: linear-gradient(175deg, $color-secondary 0%, $color-primary 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 }
