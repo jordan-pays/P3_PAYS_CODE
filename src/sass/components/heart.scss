@@ -2,7 +2,7 @@
     color: black;
     font-size: 24px;
     z-index: 2;
-    &:active .heart--active , &:hover  .heart--active {
+    &:active .heart--active , &:hover  .heart--active , &:focus .heart--active {
             z-index: 2;
             opacity: 1;
     }
