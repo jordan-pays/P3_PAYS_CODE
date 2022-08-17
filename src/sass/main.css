@@ -438,7 +438,7 @@ a {
   -webkit-box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
           box-shadow: 0px 3px 12px 3px rgba(0, 0, 0, 0.18);
   border-radius: 50px;
-  background-color: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
+  background: linear-gradient(175deg, #ff93e1 0%, #a16be0 100%);
   opacity: 0;
   z-index: -1;
   -webkit-transition: all 400ms;
@@ -742,7 +742,7 @@ a {
   z-index: 2;
 }
 
-.heart:active .heart--active, .heart:hover .heart--active {
+.heart:active .heart--active, .heart:hover .heart--active, .heart:focus .heart--active {
   z-index: 2;
   opacity: 1;
 }
